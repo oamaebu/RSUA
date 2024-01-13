@@ -31,23 +31,10 @@ Route::get('/education', function () {
 })->name('education');
 
 
+Route::get('/login', function () {
+    return view('user.auth.login');
+})->name('login');
 
-Route::group(['prefix' => 'user'], function() {
-
-    Route::get('login', [AuthController::class, 'formLogin'])->name('user.login');
-    Route::post('login', [AuthController::class, 'login'])->name('user.login.submit');
-    Route::get('logout', [AuthController::class, 'logout'])->name('user.logout');
-
-    Route::group(['middleware' => 'auth'], function() {
-        Route::group(['prefix' => 'edu'], function() {
-            Route::get('/', function () {
-                return view('user.dashboard');
-            })->name('user.dashboard');
-
-        });
-        
-     
-    });
-    
-
-});
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+})->name('dashboard');
