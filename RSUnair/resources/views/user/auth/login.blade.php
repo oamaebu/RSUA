@@ -29,7 +29,7 @@
                 placeholder="Email">
 				<input type="password" class="form-control" name="password" id="password"
                             placeholder="password">
-				<button type="submit">Log In</button>
+				<a href="{{ route('dashboard') }}">Log In</a>
                 <a href="" style="color: blue">kembali</a>
 			</form>
 		</div>
