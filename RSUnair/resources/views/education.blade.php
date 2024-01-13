@@ -94,7 +94,7 @@
 
                 <div class="row justify-content-center" style="margin-bottom: 10%">
                     <!-- Icon Box 1 -->
-                    <a href="{{ route('user.login') }}">
+                    <a href="{{ route('login') }}">
                         <div class="col-3 mb-5" style="position: relative;">
                             <div class="icon-box" data-aos="fade-up" data-aos-delay="200" style="height: 400%; background-image: url('image/staff.JPG'); background-size: cover; filter: brightness(90%); position: relative;">
                                 <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(73, 73, 73, 0.5);"></div>
